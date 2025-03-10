@@ -1,0 +1,13 @@
+
+> exam-app@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.2.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.33:3000
+
+ ✓ Starting...
+ ✓ Ready in 731ms
+ ○ Compiling / ...
+ ✓ Compiled / in 996ms
+ GET / 200 in 1193ms

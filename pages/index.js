@@ -44,19 +44,23 @@ export default function Home() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>受験アプリ</h1>
+      <h1 className="text-3xl font-bold text-blue-500">受験アプリ</h1>
 
       {user ? (
         <div>
           <p>ようこそ、{user.displayName} さん！</p>
           <p>メール: {user.email}</p>
           {lastLogin && <p>前回のログイン: {new Date(lastLogin).toLocaleString()}</p>}
-          <button onClick={handleLogout} style={{ padding: "10px", fontSize: "16px", marginTop: "10px" }}>
+          <button 
+            className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
+            onClick={handleLogout} style={{ padding: "10px", fontSize: "16px", marginTop: "10px" }}>
             ログアウト
           </button>
         </div>
       ) : (
-        <button onClick={handleLogin} style={{ padding: "10px", fontSize: "16px" }}>
+        <button 
+          className="bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition"
+          onClick={handleLogin} style={{ padding: "10px", fontSize: "16px" }}>
           Googleでログイン
         </button>
       )}
